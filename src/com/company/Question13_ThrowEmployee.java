@@ -1,7 +1,5 @@
 package com.company;
 
-import java.util.Scanner;
-
 public class Question13_ThrowEmployee {
   public static void main(String[] args) {
 
