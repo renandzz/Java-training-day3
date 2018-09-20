@@ -22,10 +22,11 @@ public class Question20 {
 
     File file1 = new File("/Users/rheist/Documents/GitHub/Java-training-day3/src/com/company/record.txt");
 
-    this.initializeFile();
+    initializeFile();
   }
 
-  public void initializeFile{
+
+  public static void initializeFile(){
     File file1 = new File("/Users/rheist/Documents/GitHub/Java-training-day3/src/com/company/record.txt");
 
     try {
