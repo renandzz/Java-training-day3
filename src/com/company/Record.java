@@ -2,7 +2,7 @@ package com.company;
 
 public class Record {
   private int recordNum;
-  private char toolName[25];
+  private String toolName;
   private int quantity;
   private double cost;
 
@@ -14,11 +14,11 @@ public class Record {
     this.recordNum = recordNum;
   }
 
-  public char[] getToolName() {
+  public String getToolName() {
     return toolName;
   }
 
-  public void setToolName(char[] toolName) {
+  public void setToolName(String toolName) {
     this.toolName = toolName;
   }
 
@@ -36,5 +36,27 @@ public class Record {
 
   public void setCost(double cost) {
     this.cost = cost;
+  }
+
+  public Record(int recordNum, String toolName, int quantity, double cost) {
+    this.recordNum = recordNum;
+    this.toolName = toolName;
+    this.quantity = quantity;
+    this.cost = cost;
+  }
+
+  public Record() {
+    setRecordNum(0);
+    setToolName(" ");
+    setQuantity(0);
+    setCost(0);
+  }
+
+  @Override
+  public String toString() {
+    return recordNum +
+        "  " + toolName +
+        "  " +quantity +
+        "  " + cost;
   }
 }
